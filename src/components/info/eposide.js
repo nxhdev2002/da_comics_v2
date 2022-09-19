@@ -16,7 +16,7 @@ export const Eposide = () => {
             <FlatList
                 data={eposide.data}
                 renderItem={({item}) => (             
-                        <ChapterComponent chapter={item} />
+                    <ChapterComponent chapter={item} />
                 )}
             />
         </ImageBackground>

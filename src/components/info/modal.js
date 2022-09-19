@@ -44,7 +44,7 @@ export const DownloadModal = (props) => {
                         <TouchableOpacity
                             onPress={() => props.visible(false)}
                         >
-                            <Text style={{lignSelf: 'center', top: '100%'}}>Hide Modal</Text>
+                            <Text style={{alignSelf: 'center', top: '100%'}}>Hide Modal</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
