@@ -1,6 +1,0 @@
-export * from './fetchComicList'
-export * from './fetchPopularList'
-export * from './fetchEposide'
-export * from './setCurrentManga'
-export * from './fetchPictureList'
-export * from './setAppbar'

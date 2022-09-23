@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { View, Text, FlatList, ActivityIndicator, ImageBackground } from 'react-native'
 import { SmallComponent } from '../manga';
 import { useSelector, useDispatch } from "react-redux";
-import { fetchPopularList, setCurrentManga } from '../../redux/actions';
+// import { fetchPopularList, setCurrentManga } from '../../redux/actions';
 import { useNavigation } from '@react-navigation/native';
 export const Popular = () => {
     const navigation = useNavigation()

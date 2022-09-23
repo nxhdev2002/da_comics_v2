@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { View, FlatList, Dimensions} from "react-native";
-import {fetchPictureList, setAppbar} from '../redux/actions'
+// import {fetchPictureList, setAppbar} from '../redux/actions'
 import { RemoteImage, AppBarHeader } from "../components/read";
 export const ReadScreen = ({navigation, route}) => {
     const picture = useSelector((state) => state.picture)

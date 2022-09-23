@@ -3,7 +3,8 @@ import { View, Dimensions, ImageBackground } from 'react-native'
 import Carousel, { Pagination } from 'react-native-snap-carousel';
 import { CoverComponent } from '../manga';
 import { useSelector, useDispatch } from "react-redux";
-import { fetchComicList, setCurrentManga } from '../../redux/actions';
+// import { setCurrentManga } from '../../redux/actions';
+import {fetchComics} from '../../features/comic/';
 import { useNavigation } from '@react-navigation/native';
 const SLIDER_WIDTH = Dimensions.get('window').width + 80
 const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.9)
@@ -14,7 +15,7 @@ export const Slider = () => {
     const [activeSlide, setActiveSlide] = useState(0)
     const dispatch = useDispatch()
     useEffect(() => {
-        dispatch(fetchComicList())
+        dispatch(fetchComics())
     }, [dispatch])
     return (    
             <ImageBackground style={{flex: 1.8, justifyContent: 'center', backgroundColor: '#00cec9'}} source={{uri: 'https://media.discordapp.net/attachments/880688607881494538/1020672928515371130/IMG_20220917_192915.jpg'}} imageStyle={{opacity: 0.3}}>

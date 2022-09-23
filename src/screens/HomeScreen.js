@@ -4,8 +4,8 @@ import { Slider, Popular } from '../components/home'
 import { AppBarHeader } from '../components/home'
 export const HomeScreen = ({navigation}) => (
     <SafeAreaView style={{flex: 1}}>
-        <AppBarHeader />
+        {/* <AppBarHeader /> */}
         <Slider />
-        <Popular />
+        {/* <Popular /> */}
     </SafeAreaView>
 )

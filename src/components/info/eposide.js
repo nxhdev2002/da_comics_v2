@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import { FlatList, ImageBackground } from 'react-native'
 import { ChapterComponent } from '../manga';
 import { useSelector, useDispatch } from "react-redux";
-import { fetchEposide } from '../../redux/actions';
+// import { fetchEposide } from '../../redux/actions';
 
 export const Eposide = () => {
     const current = useSelector((state) => state.current)
